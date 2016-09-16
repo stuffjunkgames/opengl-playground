@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Playground" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Playground" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Playground" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="-D__NO_INLINE__" />
+			<Add directory="D:/OpenGL_Libraries/glfw-3.1.2/include" />
+			<Add directory="D:/OpenGL_Libraries/glew-1.13.0/include" />
+			<Add directory="D:/OpenGL_Libraries/SOIL/Simple OpenGL Image Library/src" />
+		</Compiler>
+		<Linker>
+			<Add library="D:\OpenGL_Libraries\SOIL\Simple OpenGL Image Library\lib\libSOIL.a" />
+			<Add library="D:\OpenGL_Libraries\glfw-3.1.2\lib\GLFW\libglfw3.a" />
+			<Add library="D:\OpenGL_Libraries\glew-1.13.0\lib\libglew32.a" />
+			<Add library="C:\MinGW\lib\libglu32.a" />
+			<Add library="C:\MinGW\lib\libopengl32.a" />
+			<Add library="C:\MinGW\lib\libgdi32.a" />
+		</Linker>
+		<Unit filename="fragment_shader.fs" />
+		<Unit filename="main.cpp" />
+		<Unit filename="vertex_shader.vs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
