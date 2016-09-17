@@ -1,5 +1,5 @@
 
-#version 150
+#version 130
 
 in vec3 Color;
 in vec2 Texcoord;

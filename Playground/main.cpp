@@ -7,7 +7,7 @@
 #include <string>
 #include <fstream>
 #include <math.h>
-#include <SOIL.h>
+#include <SOIL/SOIL.h>
 
 std::string readFile(const char *filePath) {
     std::string content;

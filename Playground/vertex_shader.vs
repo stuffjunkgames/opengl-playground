@@ -1,5 +1,5 @@
 
-#version 150
+#version 130
 
 in vec2 position;
 in vec3 color;
